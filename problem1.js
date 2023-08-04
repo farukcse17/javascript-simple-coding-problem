@@ -4,22 +4,18 @@
 
 // Qst: write a code. find out min num from an array
 
-// function minNumber(numbers){
-//     let minNumbers = numbers[0];
-//     for(let i = 0; i < numbers.length; i++){
-//         let element = numbers[i];
-//         if(element < minNumbers){
-//             minNumbers = element;
-//         }
-//     }
-//     return minNumbers;
-// }
-
-// const numbers = [4, 5, 6, 2, 3, 9, 23, 48, 50, 22];
-// const result = minNumber(numbers);
-// console.log(result);
-
-function add(a, b){
-    return a + b;
+function minNumber(numbers){
+    let minNumbers = numbers[0];
+    for(let i = 0; i < numbers.length; i++){
+        let element = numbers[i];
+        if(element < minNumbers){
+            minNumbers = element;
+        }
+    }
+    return minNumbers;
 }
-console.log(add("adam"+"eve"))
+
+const numbers = [4, 5, 6, 2, 3, 9, 23, 48, 50, 22];
+const result = minNumber(numbers);
+console.log(result);
+
